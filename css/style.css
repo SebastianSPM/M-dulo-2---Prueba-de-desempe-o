@@ -1,0 +1,254 @@
+
+/*
+Le damos estilos generales y quitamos algunas cosas por defecto
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/*
+Aqui basicamente seleccionamos esta etiqueta para colocarle un fondo
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/img/nature.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.title {
+    color: #e9e5e5;
+    text-shadow: 1px 1px #000;
+    margin-right: 20px;
+    padding: 10px;
+
+    transition-property: background-color, width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.title span{
+    color: #C98025;
+}
+
+/*
+Usamos esta pseudoclase para cambiar el color de la letra de la etiqueta h1
+*/
+
+
+.title:hover {
+    color: rgb(25, 122, 25);
+    transform: scale(1.5);
+    animation: ease-in 0.6;
+    cursor: pointer;
+}
+
+/*
+Le damos estilos, tamaño a la caja
+*/
+.box-1 {
+    width: 100%;
+    background-color: #2F3E44;
+    display: flex;
+    flex-direction: reverse;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+
+/*
+Le damos ancho, alto y algo de diseño a la imagen
+*/
+.box-1 #person-image {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 30px;
+    box-shadow: 2px 2px #000;
+}
+
+.navbar {
+    display: flex;
+    background-color: #91BBC1;
+    justify-content: end;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-weight: 400;
+}
+
+/*
+Le damos flexibilidad a los ul y quitar estilo a los ul
+*/
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    display: flex;
+    text-decoration: none;
+    margin-right: 30px;
+    justify-content: center;
+    width: 100%;
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+    padding: 2px;
+
+    transition-property: background-color, width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+a:hover {
+    background-color: #2F3E44;
+}
+
+nav ul li a:hover{
+    border: none;
+    box-shadow: none;
+    transform: scale(1.2);
+}
+
+.footer-page {
+    background-color: #2F3E44;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+
+a:focus-within{
+    background-color: #2F3E44;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.grid-item p{
+    font-weight: 400;
+
+}
+
+.grid-item img{
+    width: 60px;
+    height:60px;
+    box-shadow: 2px 2px #000;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.grid-item img:hover{
+    box-shadow: 2px 2px #fff;
+}
+
+.grid-item {
+    background-color: #91BBC1;
+    padding: 25px;
+    border: 1px solid #ccc;
+    text-align: center;
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.grid-item span{
+    color: #C98025;
+}
+
+h2::before{
+    content: " 😁 ";
+}
+
+h2, caption{
+    margin: 5px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px #fff;
+}
+
+.section-table {
+    border: 2px 2px solid #000;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    height: 100px;
+}
+
+.for__button{
+    border: 2px solid black;
+    width: 50%;
+    height: 50px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}
+
+.for__button:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    border: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    width: 100px;
+    height: 70px;
+}
+
+caption::before{
+  content: "👉    ";
+}
+
+caption::after{
+    content: "    👈";
+}
+
+
+.section-main {
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 30px auto;
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.section-main form,
+.section-main table {
+    max-width: 90vw;
+    width: 100%;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+form input{
+    border: 1.5px solid #000;
+}
+
+.section-main .grid-item{
+    color: #000000;
+    font-weight: 700;
+}

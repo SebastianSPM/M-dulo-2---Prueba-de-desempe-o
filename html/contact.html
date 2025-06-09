@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="60">
+    <meta name="author" content="Sebastian Pereira">
+    <meta name="description" content="Esta pagina es de la semana 3">
+    <meta name="keyword" content="html, css, comienzo, empezando, semana3, flex, grid, animaciones, principiante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/stcore-logo-png_seeklogo-513048.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/adaptive.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+</head>
+
+<body>
+    <header>
+        <!-- Se crea una caja para contener los elementos-->
+        <div class="box-1">
+            <h1 class="title" id="header-title" title="Name!">S<span>P</span></h1>
+            <figure>
+                <img id="person-image" src="../assets/img/person.webp" alt="Imagen-logo" title="Sebastian Pereira">
+            </figure>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="section-main">
+            <div class="grid-item">
+                <form>
+                    <h2>Visual Customization</h2>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Luis Lopez" required minlength="4">
+                    </div>
+                    
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="lolope@dominio.com" required>
+                    </div>
+                        
+                    <div>
+                        <label for="number">Phone</label>
+                        <input type="number" id="number" name="number" placeholder="+573037592748">
+                    </div>
+
+                    <button class="for__button" type="reset">send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-page">
+        <small>all right by Riwi</small>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
