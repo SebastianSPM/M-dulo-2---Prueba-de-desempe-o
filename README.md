@@ -5,6 +5,8 @@
 
 <p>Este proyecto es acerca de mi, las tecnologias que uso y las habilidades blandas que una persona debe tener para desarrollar software.</p>
 
+#FOTO #1
+
 
 
 
