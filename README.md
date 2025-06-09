@@ -4,7 +4,6 @@
 ![Imagen-portafolio](https://github.com/user-attachments/assets/2e3008b1-cccf-49d7-9f7e-7befbd7eb4af)
 
 
-https://img.shields.io/github/issues/camilafernanda/GlicoCare
-
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 
