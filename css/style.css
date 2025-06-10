@@ -7,10 +7,6 @@
     line-height: 1.5;
 }
 
-/*
-Aqui basicamente seleccionamos esta etiqueta para colocarle un fondo
-*/
-
 body {
     display: flex;
     flex-direction: column;
@@ -42,10 +38,6 @@ main {
     color: #C98025;
 }
 
-/*
-Usamos esta pseudoclase para cambiar el color de la letra de la etiqueta h1
-*/
-
 
 .title:hover {
     color: rgb(25, 122, 25);
@@ -54,9 +46,7 @@ Usamos esta pseudoclase para cambiar el color de la letra de la etiqueta h1
     cursor: pointer;
 }
 
-/*
-Le damos estilos, tamaño a la caja
-*/
+
 .box-1 {
     width: 100%;
     background-color: #2F3E44;
@@ -67,9 +57,7 @@ Le damos estilos, tamaño a la caja
     padding: 10px;
 }
 
-/*
-Le damos ancho, alto y algo de diseño a la imagen
-*/
+
 .box-1 #person-image {
     width: 60px;
     height: 60px;
@@ -87,9 +75,7 @@ Le damos ancho, alto y algo de diseño a la imagen
     font-weight: 400;
 }
 
-/*
-Le damos flexibilidad a los ul y quitar estilo a los ul
-*/
+
 .navbar nav ul {
     display: flex;
     list-style: none;
